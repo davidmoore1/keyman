@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:KeymanEngine.xcodeproj">
+      location = "group:ios/engine/KMEI/KeymanEngineCarthage.xcodeproj">
    </FileRef>
 </Workspace>
