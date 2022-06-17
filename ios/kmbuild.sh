@@ -38,6 +38,7 @@ display_usage ( ) {
     echo "  -debug                  Sets the configuration to debug mode instead of release."
     echo "  -download-resources     Download up-to-date versions of the engine's default resources from downloads.keyman.com."
     echo "  -add-sim-artifact       Also produce a Simulator-installable .app build artifact"
+    echo "  -only-bundle            Used for carthage build to do an engine build without actually building the engine"
 exit 1
 }
 
@@ -63,6 +64,7 @@ CONFIG=Release
 DO_KMP_DOWNLOADS=false
 CODE_SIGN=
 DO_CODE_SIGN=true
+BUNDLE_ONLY=false
 
 # Parse args
 while [[ $# -gt 0 ]] ; do
@@ -77,6 +79,10 @@ while [[ $# -gt 0 ]] ; do
             ;;
         -only-framework)
             DO_KEYMANAPP=false
+            ;;
+        -only-bundle)
+            DO_KEYMANAPP=false
+            BUNDLE_ONLY=true
             ;;
         -no-codesign)
             CODE_SIGN="CODE_SIGN_IDENTITY= CODE_SIGNING_REQUIRED=NO ${DEV_TEAM:-} CODE_SIGN_ENTITLEMENTS= CODE_SIGNING_ALLOWED=NO"
@@ -215,6 +221,9 @@ update_bundle ( ) {
 
 # First things first - update our dependencies.
 update_bundle
+if [ $BUNDLE_ONLY = true ]; then
+  exit 0
+fi
 
 if [ $DO_CARTHAGE = true ]; then
   echo

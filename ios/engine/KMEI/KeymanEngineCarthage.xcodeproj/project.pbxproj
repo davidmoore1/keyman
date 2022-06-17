@@ -1063,6 +1063,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C06D37301F81F4E100F61AE0 /* Build configuration list for PBXNativeTarget "KeymanEngine" */;
 			buildPhases = (
+				63CA7D80285CC8650061CF95 /* Run Script */,
 				C06D37261F81F4E100F61AE0 /* Sources */,
 				C06D37271F81F4E100F61AE0 /* Frameworks */,
 				C06D37281F81F4E100F61AE0 /* Headers */,
@@ -1278,6 +1279,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		63CA7D80285CC8650061CF95 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd \"$KEYMAN_ROOT/ios\"\n./build.sh -only-bundle\n\n";
+		};
 		C06D37C61F82364E00F61AE0 /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1820,6 +1839,7 @@
 		};
 		C06D37311F81F4E100F61AE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F27FCAF6157FD95E00FBBA20 /* Keyman-lib.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
@@ -1876,6 +1896,7 @@
 		};
 		C06D37321F81F4E100F61AE0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F27FCAF6157FD95E00FBBA20 /* Keyman-lib.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
@@ -2071,6 +2092,7 @@
 		};
 		CE7E13D2240E00DF00252C00 /* Debug + Sentry */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F27FCAF6157FD95E00FBBA20 /* Keyman-lib.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;

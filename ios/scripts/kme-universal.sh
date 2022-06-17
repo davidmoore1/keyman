@@ -11,7 +11,7 @@ THIS_SCRIPT="$(greadlink -f "${BASH_SOURCE[0]}" 2>/dev/null || readlink -f "${BA
 
 SCHEME_NAME="KeymanEngine"
 FRAMEWORK_NAME="KeymanEngine"
-
+PROJECT_NAME="KeymanEngine.xcodeproj"
 # CONFIGURATION: one of [Debug, Debug + Sentry, Release]
 #                - is auto-set by Xcode, is also managed by initial build script
 XCFRAMEWORK="${BUILD_DIR}/${CONFIGURATION}/${FRAMEWORK_NAME}.xcframework"
@@ -32,6 +32,7 @@ build_archive ( ) {
   #        (It nukes the base .framework file used to build the archive with a
   #        broken alias that subsequent builds [like the main app's!] can't process.)
   xcodebuild build \
+             -project "${PROJECT_NAME}" \
              -scheme "${SCHEME_NAME}" \
              -configuration ${CONFIGURATION} \
              -sdk "$1" \
