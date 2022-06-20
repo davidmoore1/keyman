@@ -44,7 +44,7 @@ exit 1
 
 do_clean ( ) {
   rm -rf $BUILD_PATH
-  rm -rf Carthage
+  rm -rf ../Carthage
 }
 
 ### START OF THE BUILD ###
@@ -226,6 +226,7 @@ if [ $BUNDLE_ONLY = true ]; then
 fi
 
 if [ $DO_CARTHAGE = true ]; then
+  cd ..
   echo
   echo "Load dependencies with Carthage"
 
@@ -240,6 +241,7 @@ if [ $DO_CARTHAGE = true ]; then
   # --no-use-binaries: due to https://github.com/Carthage/Carthage/issues/3134,
   # which affects the sentry-cocoa dependency.
   carthage build --use-xcframeworks --no-use-binaries --platform iOS || fail "Carthage dependency loading failed"
+  cd ./ios
 fi
 
 echo
