@@ -170,7 +170,7 @@ update_bundle ( ) {
         # Local development optimization - cross-target Sentry uploading when requested
         # by developer.  As it's not CI, the Web artifacts won't exist otherwise...
         # unless the developer manually runs the correct build configuration accordingly.
-        if [[ $VERSION_ENVIRONMENT == "local" ]] && [[ $UPLOAD_SENTRY == true ]]; then
+        if [[ $VERSION_ENVIRONMENT == "local" ]] && [[ $UPLOAD_SENTRY == true ]] && [[ $BUNDLE_ONLY = false ]]; then
           KMWFLAGS="$KMWFLAGS -upload-sentry"
         fi
 
