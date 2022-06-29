@@ -328,7 +328,7 @@ readonly BUILD_COREWEB
 readonly DO_MINIFY
 readonly UPLOAD_WEB_SENTRY
 readonly UPLOAD_EMBED_SENTRY
-
+echo "UPLOAD_SENTRY $UPLOAD_SENTRY UPLOAD_WEB_SENTRY $UPLOAD_WEB_SENTRY UPLOAD_EMBED_SENTRY $UPLOAD_EMBED_SENTRY"
 if [ $FETCH_DEPS = true ]; then
     # Ensure the dependencies are downloaded.
     verify_npm_setup
@@ -448,7 +448,7 @@ if [ $BUILD_EMBED = true ]; then
             ARTIFACT_FOLDER="release/embedded"
             pushd $EMBED_OUTPUT
         fi
-        echo "Uploading to Sentry..."
+        echo "Uploading to Sentry... UPLOAD_EMBED_SENTRY $UPLOAD_EMBED_SENTRY"
         npm run sentry-cli -- releases files "$SENTRY_RELEASE_VERSION" upload-sourcemaps --strip-common-prefix $ARTIFACT_FOLDER --rewrite --ext js --ext map --ext ts || fail "Sentry upload failed."
         echo "Upload successful."
         popd
