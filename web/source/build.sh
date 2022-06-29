@@ -235,6 +235,7 @@ set_default_vars ( ) {
     BUILD_COREWEB=true
     DO_MINIFY=true
     FETCH_DEPS=true
+    UPLOAD_SENTRY=false
 }
 
 if [[ $# = 0 ]]; then
@@ -297,6 +298,7 @@ while [[ $# -gt 0 ]] ; do
         -upload-sentry)
             # Overrides default value provided by resources/build_utils.sh
             UPLOAD_SENTRY=true
+            echo "Set UPLOAD_SENTRY true"
             ;;
     esac
     shift # past argument
@@ -306,6 +308,7 @@ done
 # Defaults (that "release build" part) set by resources/build_utils.sh
 
 # `./build.sh` and `./build.sh -embed` calls may upload 'embedded' artifacts to Sentry.
+echo "UPLOAD_SENTRY $UPLOAD_SENTRY"
 if [[ $UPLOAD_SENTRY = true ]] && [[ $BUILD_EMBED = true ]] && [[ $DO_MINIFY = true ]]; then
     UPLOAD_EMBED_SENTRY=true
 else

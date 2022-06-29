@@ -173,7 +173,7 @@ update_bundle ( ) {
         if [[ $VERSION_ENVIRONMENT == "local" ]] && [[ $UPLOAD_SENTRY == true ]] && [[ $BUNDLE_ONLY = false ]]; then
           KMWFLAGS="$KMWFLAGS -upload-sentry"
         fi
-
+        echo "KMWFLAGS $KMWFLAGS BUNDLE_ONLY $BUNDLE_ONLY"
         ./build.sh $KMWFLAGS
         if [ $? -ne 0 ]; then
             fail "ERROR:  KeymanWeb's build.sh failed."
