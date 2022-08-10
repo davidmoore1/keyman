@@ -14,6 +14,18 @@
 		162E2C9F2092D36800F40769 /* UIDevice+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162E2C9E2092D36800F40769 /* UIDevice+Extensions.swift */; };
 		165EB39A2097165B00040A69 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165EB3992097165B00040A69 /* UIColor+Extensions.swift */; };
 		165EB39C2097181D00040A69 /* KMView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165EB39B2097181D00040A69 /* KMView.swift */; };
+		636436CC28A43FCF00E1DDCB /* DeviceKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 636436CA28A43F7600E1DDCB /* DeviceKit.xcframework */; };
+		636436CD28A43FD000E1DDCB /* DeviceKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 636436CA28A43F7600E1DDCB /* DeviceKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		636436D028A4402A00E1DDCB /* ObjcExceptionBridging.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 636436CE28A4401C00E1DDCB /* ObjcExceptionBridging.xcframework */; };
+		636436D128A4402A00E1DDCB /* ObjcExceptionBridging.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 636436CE28A4401C00E1DDCB /* ObjcExceptionBridging.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		636436D428A4408000E1DDCB /* Reachability.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 636436D228A4406C00E1DDCB /* Reachability.xcframework */; };
+		636436D528A4408000E1DDCB /* Reachability.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 636436D228A4406C00E1DDCB /* Reachability.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		636436D828A4409A00E1DDCB /* Sentry.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 636436D628A4409500E1DDCB /* Sentry.xcframework */; };
+		636436D928A4409A00E1DDCB /* Sentry.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 636436D628A4409500E1DDCB /* Sentry.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		636436DC28A440AD00E1DDCB /* XCGLogger.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 636436DA28A440A900E1DDCB /* XCGLogger.xcframework */; };
+		636436DD28A440AD00E1DDCB /* XCGLogger.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 636436DA28A440A900E1DDCB /* XCGLogger.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		636436E028A440C100E1DDCB /* Zip.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 636436DE28A440BC00E1DDCB /* Zip.xcframework */; };
+		636436E128A440C100E1DDCB /* Zip.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 636436DE28A440BC00E1DDCB /* Zip.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		981AFA8F19EF44DE006706BF /* 724-info@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9815725518E4F0930014DF0C /* 724-info@2x.png */; };
 		981AFA9619EF44DE006706BF /* MainViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98ABADCE176935E500B62590 /* MainViewController_iPhone.xib */; };
 		981AFA9819EF44DE006706BF /* 724-info.png in Resources */ = {isa = PBXBuildFile; fileRef = 9815725418E4F0930014DF0C /* 724-info.png */; };
@@ -145,18 +157,6 @@
 		CE80AD33257F2B4A008D2150 /* KeymanEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE80AD32257F2B4A008D2150 /* KeymanEngine.framework */; };
 		CE80AD34257F2B4B008D2150 /* KeymanEngine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE80AD32257F2B4A008D2150 /* KeymanEngine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CEBD34322654FE3500EB2EA8 /* KeymanEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE80AD32257F2B4A008D2150 /* KeymanEngine.framework */; };
-		CEBD343B2654FEB400EB2EA8 /* DeviceKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEBD34352654FEB400EB2EA8 /* DeviceKit.xcframework */; };
-		CEBD343C2654FEB400EB2EA8 /* DeviceKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CEBD34352654FEB400EB2EA8 /* DeviceKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CEBD343D2654FEB400EB2EA8 /* ObjcExceptionBridging.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEBD34362654FEB400EB2EA8 /* ObjcExceptionBridging.xcframework */; };
-		CEBD343E2654FEB400EB2EA8 /* ObjcExceptionBridging.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CEBD34362654FEB400EB2EA8 /* ObjcExceptionBridging.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CEBD343F2654FEB400EB2EA8 /* Reachability.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEBD34372654FEB400EB2EA8 /* Reachability.xcframework */; };
-		CEBD34402654FEB400EB2EA8 /* Reachability.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CEBD34372654FEB400EB2EA8 /* Reachability.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CEBD34412654FEB400EB2EA8 /* Sentry.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEBD34382654FEB400EB2EA8 /* Sentry.xcframework */; };
-		CEBD34422654FEB400EB2EA8 /* Sentry.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CEBD34382654FEB400EB2EA8 /* Sentry.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CEBD34432654FEB400EB2EA8 /* XCGLogger.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEBD34392654FEB400EB2EA8 /* XCGLogger.xcframework */; };
-		CEBD34442654FEB400EB2EA8 /* XCGLogger.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CEBD34392654FEB400EB2EA8 /* XCGLogger.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CEBD34452654FEB400EB2EA8 /* Zip.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEBD343A2654FEB400EB2EA8 /* Zip.xcframework */; };
-		CEBD34462654FEB400EB2EA8 /* Zip.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CEBD343A2654FEB400EB2EA8 /* Zip.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CEF4E55623E95B7B0065B9C7 /* ImageBanner.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF4E55523E95B7B0065B9C7 /* ImageBanner.xib */; };
 		CEF4E55723E95B7B0065B9C7 /* ImageBanner.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF4E55523E95B7B0065B9C7 /* ImageBanner.xib */; };
 		CEF4E55923E967140065B9C7 /* ImageBannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF4E55823E967140065B9C7 /* ImageBannerViewController.swift */; };
@@ -181,13 +181,13 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				CEBD34402654FEB400EB2EA8 /* Reachability.xcframework in Embed Frameworks */,
-				CEBD343E2654FEB400EB2EA8 /* ObjcExceptionBridging.xcframework in Embed Frameworks */,
-				CEBD343C2654FEB400EB2EA8 /* DeviceKit.xcframework in Embed Frameworks */,
-				CEBD34422654FEB400EB2EA8 /* Sentry.xcframework in Embed Frameworks */,
-				CEBD34442654FEB400EB2EA8 /* XCGLogger.xcframework in Embed Frameworks */,
+				636436D128A4402A00E1DDCB /* ObjcExceptionBridging.xcframework in Embed Frameworks */,
+				636436D528A4408000E1DDCB /* Reachability.xcframework in Embed Frameworks */,
+				636436D928A4409A00E1DDCB /* Sentry.xcframework in Embed Frameworks */,
+				636436CD28A43FD000E1DDCB /* DeviceKit.xcframework in Embed Frameworks */,
 				CE80AD34257F2B4B008D2150 /* KeymanEngine.framework in Embed Frameworks */,
-				CEBD34462654FEB400EB2EA8 /* Zip.xcframework in Embed Frameworks */,
+				636436DD28A440AD00E1DDCB /* XCGLogger.xcframework in Embed Frameworks */,
+				636436E128A440C100E1DDCB /* Zip.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,6 +210,12 @@
 		29C1E17028001EC200759EDE /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		37378F4222C9AA610043F22B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainViewController_iPad.xib; sourceTree = "<group>"; };
 		37378F4322C9AA630043F22B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainViewController_iPhone.xib; sourceTree = "<group>"; };
+		636436CA28A43F7600E1DDCB /* DeviceKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = DeviceKit.xcframework; path = ../../../Carthage/Build/DeviceKit.xcframework; sourceTree = "<group>"; };
+		636436CE28A4401C00E1DDCB /* ObjcExceptionBridging.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ObjcExceptionBridging.xcframework; path = ../../../../../keyman15dm/keyman/Carthage/Build/ObjcExceptionBridging.xcframework; sourceTree = "<group>"; };
+		636436D228A4406C00E1DDCB /* Reachability.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Reachability.xcframework; path = ../../../Carthage/Build/Reachability.xcframework; sourceTree = "<group>"; };
+		636436D628A4409500E1DDCB /* Sentry.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Sentry.xcframework; path = ../../../Carthage/Build/Sentry.xcframework; sourceTree = "<group>"; };
+		636436DA28A440A900E1DDCB /* XCGLogger.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = XCGLogger.xcframework; path = ../../../Carthage/Build/XCGLogger.xcframework; sourceTree = "<group>"; };
+		636436DE28A440BC00E1DDCB /* Zip.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Zip.xcframework; path = ../../../Carthage/Build/Zip.xcframework; sourceTree = "<group>"; };
 		9815725018E4F0930014DF0C /* 702-share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "702-share.png"; path = "Keyman Icons/702-share.png"; sourceTree = "<group>"; };
 		9815725118E4F0930014DF0C /* 702-share@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "702-share@2x.png"; path = "Keyman Icons/702-share@2x.png"; sourceTree = "<group>"; };
 		9815725218E4F0930014DF0C /* 711-trash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "711-trash.png"; path = "Keyman Icons/711-trash.png"; sourceTree = "<group>"; };
@@ -333,12 +339,6 @@
 		CEACC90E25F07D58006EAB45 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CEACC90F25F07D5A006EAB45 /* km */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = km; path = km.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CEACC91225F07D77006EAB45 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
-		CEBD34352654FEB400EB2EA8 /* DeviceKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = DeviceKit.xcframework; path = ../../Carthage/Build/DeviceKit.xcframework; sourceTree = "<absolute>"; };
-		CEBD34362654FEB400EB2EA8 /* ObjcExceptionBridging.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ObjcExceptionBridging.xcframework; path = ../../Carthage/Build/ObjcExceptionBridging.xcframework; sourceTree = "<absolute>"; };
-		CEBD34372654FEB400EB2EA8 /* Reachability.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Reachability.xcframework; path = ../../Carthage/Build/Reachability.xcframework; sourceTree = "<absolute>"; };
-		CEBD34382654FEB400EB2EA8 /* Sentry.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Sentry.xcframework; path = ../../Carthage/Build/Sentry.xcframework; sourceTree = "<absolute>"; };
-		CEBD34392654FEB400EB2EA8 /* XCGLogger.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = XCGLogger.xcframework; path = ../../Carthage/Build/XCGLogger.xcframework; sourceTree = "<absolute>"; };
-		CEBD343A2654FEB400EB2EA8 /* Zip.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Zip.xcframework; path = ../../Carthage/Build/Zip.xcframework; sourceTree = "<absolute>"; };
 		CEBD3458265511B700EB2EA8 /* am */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = am; path = am.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CEEC468226F2F7BA009A5B7D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		CEEF81B92673019600EE6A07 /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/Localizable.strings"; sourceTree = "<group>"; };
@@ -351,13 +351,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEBD343F2654FEB400EB2EA8 /* Reachability.xcframework in Frameworks */,
-				CEBD343D2654FEB400EB2EA8 /* ObjcExceptionBridging.xcframework in Frameworks */,
-				CEBD343B2654FEB400EB2EA8 /* DeviceKit.xcframework in Frameworks */,
-				CEBD34412654FEB400EB2EA8 /* Sentry.xcframework in Frameworks */,
-				CEBD34432654FEB400EB2EA8 /* XCGLogger.xcframework in Frameworks */,
+				636436D028A4402A00E1DDCB /* ObjcExceptionBridging.xcframework in Frameworks */,
+				636436D428A4408000E1DDCB /* Reachability.xcframework in Frameworks */,
+				636436D828A4409A00E1DDCB /* Sentry.xcframework in Frameworks */,
+				636436CC28A43FCF00E1DDCB /* DeviceKit.xcframework in Frameworks */,
 				CE80AD33257F2B4A008D2150 /* KeymanEngine.framework in Frameworks */,
-				CEBD34452654FEB400EB2EA8 /* Zip.xcframework in Frameworks */,
+				636436DC28A440AD00E1DDCB /* XCGLogger.xcframework in Frameworks */,
+				636436E028A440C100E1DDCB /* Zip.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -538,12 +538,12 @@
 		98ABADB2176935E400B62590 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CEBD34352654FEB400EB2EA8 /* DeviceKit.xcframework */,
-				CEBD34362654FEB400EB2EA8 /* ObjcExceptionBridging.xcframework */,
-				CEBD34372654FEB400EB2EA8 /* Reachability.xcframework */,
-				CEBD34382654FEB400EB2EA8 /* Sentry.xcframework */,
-				CEBD34392654FEB400EB2EA8 /* XCGLogger.xcframework */,
-				CEBD343A2654FEB400EB2EA8 /* Zip.xcframework */,
+				636436CA28A43F7600E1DDCB /* DeviceKit.xcframework */,
+				636436CE28A4401C00E1DDCB /* ObjcExceptionBridging.xcframework */,
+				636436D228A4406C00E1DDCB /* Reachability.xcframework */,
+				636436D628A4409500E1DDCB /* Sentry.xcframework */,
+				636436DA28A440A900E1DDCB /* XCGLogger.xcframework */,
+				636436DE28A440BC00E1DDCB /* Zip.xcframework */,
 				CE80AD32257F2B4A008D2150 /* KeymanEngine.framework */,
 			);
 			name = Frameworks;
@@ -791,7 +791,7 @@
 				"ff-NG",
 				"pt-PT",
 				it,
-				pl
+				pl,
 			);
 			mainGroup = 98ABADA7176935E400B62590;
 			productRefGroup = 98ABADB1176935E400B62590 /* Products */;
@@ -1097,7 +1097,7 @@
 				294914742738DF7700400732 /* ff-NG */,
 				29C1E17028001EC200759EDE /* pt-PT */,
 				29BFA75D282931F8009FCCC3 /* it */,
-				29BFA769282946EC009FCCC3 /* pl */
+				29BFA769282946EC009FCCC3 /* pl */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";

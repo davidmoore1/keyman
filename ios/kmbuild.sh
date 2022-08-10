@@ -219,7 +219,7 @@ update_bundle
 if [ $DO_CARTHAGE = true ]; then
   echo
   echo "Load dependencies with Carthage"
-
+  cd ..
   carthage checkout || fail "Carthage dependency loading failed"
 
   # Carthage sometimes picks the wrong .xcworkspace if two are available in a dependency's repo.
@@ -231,6 +231,7 @@ if [ $DO_CARTHAGE = true ]; then
   # --no-use-binaries: due to https://github.com/Carthage/Carthage/issues/3134,
   # which affects the sentry-cocoa dependency.
   carthage build --use-xcframeworks --no-use-binaries --platform iOS || fail "Carthage dependency loading failed"
+  cd ./ios
 fi
 
 echo
