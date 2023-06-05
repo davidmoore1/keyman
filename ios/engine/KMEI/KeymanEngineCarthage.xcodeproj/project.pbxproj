@@ -1081,6 +1081,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C06D37301F81F4E100F61AE0 /* Build configuration list for PBXNativeTarget "KeymanEngine" */;
 			buildPhases = (
+				A423F1C02A2A5C3000A09377 /* ShellScript */,
 				C06D37261F81F4E100F61AE0 /* Sources */,
 				C06D37271F81F4E100F61AE0 /* Frameworks */,
 				C06D37281F81F4E100F61AE0 /* Headers */,
@@ -1189,7 +1190,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F243887814BBD43000A3E055 /* Build configuration list for PBXProject "KeymanEngine" */;
+			buildConfigurationList = F243887814BBD43000A3E055 /* Build configuration list for PBXProject "KeymanEngineCarthage" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -1302,6 +1303,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		A423F1C02A2A5C3000A09377 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd \"$KEYMAN_ROOT/ios\"\n./build.sh -only-bundle\n";
+		};
 		C06D37C61F82364E00F61AE0 /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -2547,7 +2565,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F243887814BBD43000A3E055 /* Build configuration list for PBXProject "KeymanEngine" */ = {
+		F243887814BBD43000A3E055 /* Build configuration list for PBXProject "KeymanEngineCarthage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F24388A314BBD43100A3E055 /* Debug */,

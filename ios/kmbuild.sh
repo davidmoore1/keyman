@@ -43,7 +43,7 @@ exit 1
 
 do_clean ( ) {
   rm -rf $BUILD_PATH
-  rm -rf Carthage
+  rm -rf ../Carthage
 }
 
 ### START OF THE BUILD ###
@@ -63,6 +63,7 @@ CONFIG=Release
 DO_KMP_DOWNLOADS=false
 CODE_SIGN=
 DO_CODE_SIGN=true
+BUNDLE_ONLY=false
 
 # Parse args
 while [[ $# -gt 0 ]] ; do
@@ -77,6 +78,10 @@ while [[ $# -gt 0 ]] ; do
             ;;
         -only-framework)
             DO_KEYMANAPP=false
+            ;;
+        -only-bundle)
+            DO_KEYMANAPP=false
+            BUNDLE_ONLY=true
             ;;
         -no-codesign)
             CODE_SIGN="CODE_SIGN_IDENTITY= CODE_SIGNING_REQUIRED=NO ${DEV_TEAM:-} CODE_SIGN_ENTITLEMENTS= CODE_SIGNING_ALLOWED=NO"
@@ -168,6 +173,7 @@ update_bundle ( ) {
           KMWFLAGS="$KMWFLAGS -upload-sentry"
         fi
 
+        echo "KMWFLAGS $KMWFLAGS BUNDLE_ONLY $BUNDLE_ONLY"
         ./build.sh $KMWFLAGS
         if [ $? -ne 0 ]; then
             fail "ERROR:  KeymanWeb's build.sh failed."
@@ -215,16 +221,21 @@ update_bundle ( ) {
 
 # First things first - update our dependencies.
 update_bundle
+echo "BUNDLE_ONLY: $BUNDLE_ONLY"
+if [ $BUNDLE_ONLY = true ]; then
+  exit 0
+fi
 
 if [ $DO_CARTHAGE = true ]; then
   echo
   echo "Load dependencies with Carthage"
-
+  cd ..
   carthage checkout || fail "Carthage dependency loading failed"
 
   # --no-use-binaries: due to https://github.com/Carthage/Carthage/issues/3134,
   # which affects the sentry-cocoa dependency.
   carthage build --use-xcframeworks --no-use-binaries --platform iOS || fail "Carthage dependency loading failed"
+  cd ./ios
 fi
 
 echo

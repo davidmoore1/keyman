@@ -235,6 +235,7 @@ set_default_vars ( ) {
     BUILD_COREWEB=true
     DO_MINIFY=true
     FETCH_DEPS=true
+    UPLOAD_SENTRY=false
 }
 
 if [[ $# = 0 ]]; then
