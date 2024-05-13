@@ -1,5 +1,5 @@
 github "marmelroy/Zip"
 github "keymanapp/dependency-XCGLogger" "master"
 github "devicekit/DeviceKit" ~> 5.0
-github "ashleymills/Reachability.swift"
+github "marcuseckert/Reachability.swift" "d5894ad317a107ae80ee349fa7ebf23ee49ff375"
 github "getsentry/sentry-cocoa" ~> 8.7.0
