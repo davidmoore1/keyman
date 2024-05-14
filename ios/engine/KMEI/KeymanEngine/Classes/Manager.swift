@@ -10,7 +10,7 @@ import UIKit
 import WebKit
 import XCGLogger
 import DeviceKit
-import Reachability
+import ReachabilitySIL
 
 typealias FetchKeyboardsBlock = ([String: Any]?) -> Void
 
@@ -170,7 +170,7 @@ public class Manager: NSObject, UIGestureRecognizerDelegate {
   }
 
   //private var downloadQueue: HTTPDownloader?
-  private var reachability: Reachability!
+  private var reachability: ReachabilitySIL!
   var didSynchronize = false
   
   private var _spacebarText: SpacebarText
@@ -217,9 +217,9 @@ public class Manager: NSObject, UIGestureRecognizerDelegate {
     updateUserKeyboards(with: Defaults.keyboard)
 
     do {
-      try reachability = Reachability(hostname: KeymanHosts.API_KEYMAN_COM.host!)
+      try reachability = ReachabilitySIL(hostname: KeymanHosts.API_KEYMAN_COM.host!)
     } catch {
-      SentryManager.captureAndLog(error, message: "Could not start Reachability object: \(error)")
+      SentryManager.captureAndLog(error, message: "Could not start ReachabilitySIL object: \(error)")
     }
 
     if(!Util.isSystemKeyboard) {
@@ -228,7 +228,7 @@ public class Manager: NSObject, UIGestureRecognizerDelegate {
       do {
         try reachability.startNotifier()
       } catch {
-        SentryManager.captureAndLog(error, message: "failed to start Reachability notifier: \(error)")
+        SentryManager.captureAndLog(error, message: "failed to start ReachabilitySIL notifier: \(error)")
       }
     }
 
@@ -709,14 +709,14 @@ public class Manager: NSObject, UIGestureRecognizerDelegate {
     log.debug {
       let reachStr: String
       switch reachability.connection {
-      case Reachability.Connection.wifi:
+      case ReachabilitySIL.Connection.wifi:
         reachStr = "Reachable Via WiFi"
-      case Reachability.Connection.cellular:
+      case ReachabilitySIL.Connection.cellular:
         reachStr = "Reachable Via WWan"
       default:
         reachStr = "Not Reachable"
       }
-      return "Reachability changed to '\(reachStr)'"
+      return "ReachabilitySIL changed to '\(reachStr)'"
     }
   }
 

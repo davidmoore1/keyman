@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import Reachability
+import ReachabilitySIL
 
 enum DownloadNode {
   case simpleBatch(AnyDownloadBatch)
@@ -264,7 +264,7 @@ class ResourceDownloadQueue: HTTPDownloadDelegate {
 
   private var queueThread: DispatchQueue
   private var downloader: HTTPDownloader?
-  private var reachability: Reachability?
+  private var reachability: ReachabilitySIL?
 
   private let session: URLSession
 
@@ -277,7 +277,7 @@ class ResourceDownloadQueue: HTTPDownloadDelegate {
 
   internal init(session: URLSession, autoExecute: Bool) {
     do {
-      try reachability = Reachability(hostname: KeymanHosts.API_KEYMAN_COM.host!)
+      try reachability = ReachabilitySIL(hostname: KeymanHosts.API_KEYMAN_COM.host!)
     } catch {
       SentryManager.captureAndLog("Could not start Reachability object: \(error)")
     }
@@ -294,7 +294,7 @@ class ResourceDownloadQueue: HTTPDownloadDelegate {
   }
   
   public func hasConnection() -> Bool {
-    return reachability?.connection != Reachability.Connection.unavailable
+    return reachability?.connection != ReachabilitySIL.Connection.unavailable
   }
 
   public var state: QueueState {

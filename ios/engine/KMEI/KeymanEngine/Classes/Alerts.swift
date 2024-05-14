@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-import Reachability
+import ReachabilitySIL
 
 open class Alerts {
   public typealias AcceptanceHandler = ((UIAlertAction)) -> Void
@@ -44,14 +44,14 @@ open class Alerts {
   }
 
   public static func showDownloadErrorAlert(in vc: UIViewController, handler: @escaping AcceptanceHandler) {
-    var networkReachable: Reachability?
+    var networkReachable: ReachabilitySIL?
     do {
-      try networkReachable = Reachability(hostname: KeymanHosts.KEYMAN_COM.host!)
+      try networkReachable = ReachabilitySIL(hostname: KeymanHosts.KEYMAN_COM.host!)
     } catch {
       log.debug("reachability could not start")
     }
 
-    if networkReachable?.connection == Reachability.Connection.unavailable || networkReachable == nil {
+    if networkReachable?.connection == ReachabilitySIL.Connection.unavailable || networkReachable == nil {
       showConnectionErrorAlert(in: vc, handler: handler)
     } else {
       // Show a different alert!

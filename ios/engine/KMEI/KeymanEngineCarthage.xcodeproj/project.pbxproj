@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -51,8 +51,9 @@
 		9AD4F53D229F85AC007992D3 /* LanguageSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AD4F53B229F85AC007992D3 /* LanguageSettingsViewController.xib */; };
 		9ADC459D22E1895D004C78C6 /* LanguageLMDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC459B22E1895D004C78C6 /* LanguageLMDetailViewController.swift */; };
 		9ADC459F22E1895D004C78C6 /* LanguageLMDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ADC459C22E1895D004C78C6 /* LanguageLMDetailViewController.xib */; };
+		A410FE6C2BF3DC0800EBF8A4 /* ReachabilitySIL.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A410FE6B2BF3DC0800EBF8A4 /* ReachabilitySIL.xcframework */; };
+		A410FE6D2BF3DC0800EBF8A4 /* ReachabilitySIL.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A410FE6B2BF3DC0800EBF8A4 /* ReachabilitySIL.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A423F19B2A2A46D200A09377 /* ObjcExceptionBridging.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A423F19A2A2A46D200A09377 /* ObjcExceptionBridging.xcframework */; };
-		A423F1A12A2A475200A09377 /* Reachability.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A423F1A02A2A475200A09377 /* Reachability.xcframework */; };
 		A423F1A72A2A47A500A09377 /* Sentry.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A423F1A62A2A47A500A09377 /* Sentry.xcframework */; };
 		A423F1AF2A2A47FB00A09377 /* XCGLogger.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A423F1AE2A2A47FB00A09377 /* XCGLogger.xcframework */; };
 		A423F1B52A2A482800A09377 /* Zip.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A423F1B42A2A482800A09377 /* Zip.xcframework */; };
@@ -274,6 +275,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A410FE6E2BF3DC0800EBF8A4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A410FE6D2BF3DC0800EBF8A4 /* ReachabilitySIL.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C06D375F1F82089300F61AE0 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -370,6 +382,7 @@
 		9AD4F53B229F85AC007992D3 /* LanguageSettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = LanguageSettingsViewController.xib; path = Settings/LanguageSettingsViewController.xib; sourceTree = "<group>"; };
 		9ADC459B22E1895D004C78C6 /* LanguageLMDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageLMDetailViewController.swift; sourceTree = "<group>"; };
 		9ADC459C22E1895D004C78C6 /* LanguageLMDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LanguageLMDetailViewController.xib; sourceTree = "<group>"; };
+		A410FE6B2BF3DC0800EBF8A4 /* ReachabilitySIL.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ReachabilitySIL.xcframework; path = ../../../Carthage/Build/ReachabilitySIL.xcframework; sourceTree = "<group>"; };
 		A423F19A2A2A46D200A09377 /* ObjcExceptionBridging.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ObjcExceptionBridging.xcframework; path = ../../../Carthage/Build/ObjcExceptionBridging.xcframework; sourceTree = "<group>"; };
 		A423F1A02A2A475200A09377 /* Reachability.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Reachability.xcframework; path = ../../../Carthage/Build/Reachability.xcframework; sourceTree = "<group>"; };
 		A423F1A62A2A47A500A09377 /* Sentry.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Sentry.xcframework; path = ../../../Carthage/Build/Sentry.xcframework; sourceTree = "<group>"; };
@@ -557,10 +570,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A423F1A12A2A475200A09377 /* Reachability.xcframework in Frameworks */,
 				A423F1B52A2A482800A09377 /* Zip.xcframework in Frameworks */,
 				A423F1BB2A2A485300A09377 /* DeviceKit.xcframework in Frameworks */,
 				A423F1A72A2A47A500A09377 /* Sentry.xcframework in Frameworks */,
+				A410FE6C2BF3DC0800EBF8A4 /* ReachabilitySIL.xcframework in Frameworks */,
 				A423F1AF2A2A47FB00A09377 /* XCGLogger.xcframework in Frameworks */,
 				A423F19B2A2A46D200A09377 /* ObjcExceptionBridging.xcframework in Frameworks */,
 			);
@@ -946,6 +959,7 @@
 		F243888114BBD43000A3E055 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A410FE6B2BF3DC0800EBF8A4 /* ReachabilitySIL.xcframework */,
 				A423F19A2A2A46D200A09377 /* ObjcExceptionBridging.xcframework */,
 				A423F1A02A2A475200A09377 /* Reachability.xcframework */,
 				A423F1A62A2A47A500A09377 /* Sentry.xcframework */,
@@ -1088,6 +1102,7 @@
 				C06D37291F81F4E100F61AE0 /* Resources */,
 				CEC0C66F2410B005003E1BCD /* Run Script - upload dsyms to Sentry */,
 				CE880430247F6EB6009BCA1A /* Run Script - set bundle versions */,
+				A410FE6E2BF3DC0800EBF8A4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
