@@ -52,7 +52,6 @@
 		9ADC459D22E1895D004C78C6 /* LanguageLMDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC459B22E1895D004C78C6 /* LanguageLMDetailViewController.swift */; };
 		9ADC459F22E1895D004C78C6 /* LanguageLMDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ADC459C22E1895D004C78C6 /* LanguageLMDetailViewController.xib */; };
 		A410FE6C2BF3DC0800EBF8A4 /* ReachabilitySIL.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A410FE6B2BF3DC0800EBF8A4 /* ReachabilitySIL.xcframework */; };
-		A410FE6D2BF3DC0800EBF8A4 /* ReachabilitySIL.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A410FE6B2BF3DC0800EBF8A4 /* ReachabilitySIL.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A423F19B2A2A46D200A09377 /* ObjcExceptionBridging.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A423F19A2A2A46D200A09377 /* ObjcExceptionBridging.xcframework */; };
 		A423F1A72A2A47A500A09377 /* Sentry.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A423F1A62A2A47A500A09377 /* Sentry.xcframework */; };
 		A423F1AF2A2A47FB00A09377 /* XCGLogger.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A423F1AE2A2A47FB00A09377 /* XCGLogger.xcframework */; };
@@ -273,17 +272,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A410FE6E2BF3DC0800EBF8A4 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				A410FE6D2BF3DC0800EBF8A4 /* ReachabilitySIL.xcframework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		C06D375F1F82089300F61AE0 /* Embed Frameworks */ = {
@@ -1102,7 +1090,6 @@
 				C06D37291F81F4E100F61AE0 /* Resources */,
 				CEC0C66F2410B005003E1BCD /* Run Script - upload dsyms to Sentry */,
 				CE880430247F6EB6009BCA1A /* Run Script - set bundle versions */,
-				A410FE6E2BF3DC0800EBF8A4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
