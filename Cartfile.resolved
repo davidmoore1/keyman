@@ -1,4 +1,4 @@
-github "davidmoore1/Reachability.swift" "bae49ddad149c0b520bf4ca2fbbe10068f2e4b01"
+github "davidmoore1/Reachability.swift" "eed9708d0fcfa564f2ff9b00de7ecf3a864440f5"
 github "devicekit/DeviceKit" "5.2.3"
 github "getsentry/sentry-cocoa" "8.26.0"
 github "keymanapp/dependency-XCGLogger" "57a7b975dbb6fe4fe90cef3d1bc52b8adbd89113"
