@@ -25,7 +25,7 @@ builder_describe "Builds Keyman Engine and the Keyman app for use on iOS devices
   ":sample2=Samples/KMSample2   Builds the second KeymanEngine sample app" \
   ":fv=../oem/firstvoices/ios   Builds OEM FirstVoices for iOS platforms" \
   "--sim-artifact+              Also outputs a simulator-friendly test artifact corresponding to the build" \
-  "--carthage+                  Build is being done from carthage"
+  "--carthage-build+            Build is being done from carthage"
 
 builder_parse "$@"
 

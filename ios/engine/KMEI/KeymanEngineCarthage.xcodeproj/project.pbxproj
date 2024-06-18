@@ -1314,7 +1314,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = "#!/usr/bin/env bash";
-			shellScript = "cd \"$KEYMAN_ROOT/ios\"\n./build.sh build:engine --carthage --debug\n";
+			shellScript = "cd \"$KEYMAN_ROOT/ios\"\n./build.sh build:engine --carthage-build --debug\n";
 		};
 		C06D37C61F82364E00F61AE0 /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
