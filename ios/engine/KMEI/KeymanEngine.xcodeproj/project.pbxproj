@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -53,6 +53,7 @@
 		9AD4F53D229F85AC007992D3 /* LanguageSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AD4F53B229F85AC007992D3 /* LanguageSettingsViewController.xib */; };
 		9ADC459D22E1895D004C78C6 /* LanguageLMDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC459B22E1895D004C78C6 /* LanguageLMDetailViewController.swift */; };
 		9ADC459F22E1895D004C78C6 /* LanguageLMDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ADC459C22E1895D004C78C6 /* LanguageLMDetailViewController.xib */; };
+		A447FD152C236035001AD246 /* ReachabilitySIL.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A447FD142C236035001AD246 /* ReachabilitySIL.xcframework */; };
 		C024C9941FA6EB470060583B /* NotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = C024C9931FA6EB470060583B /* NotificationName.swift */; };
 		C024C9961FA6EC650060583B /* NotificationCenter+Typed.swift in Sources */ = {isa = PBXBuildFile; fileRef = C024C9951FA6EC650060583B /* NotificationCenter+Typed.swift */; };
 		C024C9981FA6F2340060583B /* NotificationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C024C9971FA6F2330060583B /* NotificationObserver.swift */; };
@@ -122,7 +123,6 @@
 		CE5C8BE324B5B3BA00FAFB7F /* Queries+LexicalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5C8BE224B5B3BA00FAFB7F /* Queries+LexicalModel.swift */; };
 		CE5C8BE524B5BD1C00FAFB7F /* QueryModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5C8BE424B5BD1C00FAFB7F /* QueryModelTests.swift */; };
 		CE5EDDC726522EAA001733AC /* Sentry.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5EDDC226522EAA001733AC /* Sentry.xcframework */; };
-		CE5EDDC826522EAA001733AC /* Reachability.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5EDDC326522EAA001733AC /* Reachability.xcframework */; };
 		CE5EDDD52652372A001733AC /* DeviceKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5EDDBB26522EA3001733AC /* DeviceKit.xcframework */; };
 		CE67D961228A6F190029F2B5 /* KeyboardCommandStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE67D960228A6F190029F2B5 /* KeyboardCommandStructs.swift */; };
 		CE71705823A9C14D00A924A1 /* ResourceFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71705723A9C14D00A924A1 /* ResourceFileManager.swift */; };
@@ -370,6 +370,7 @@
 		9AD4F53B229F85AC007992D3 /* LanguageSettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = LanguageSettingsViewController.xib; path = Settings/LanguageSettingsViewController.xib; sourceTree = "<group>"; };
 		9ADC459B22E1895D004C78C6 /* LanguageLMDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageLMDetailViewController.swift; sourceTree = "<group>"; };
 		9ADC459C22E1895D004C78C6 /* LanguageLMDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LanguageLMDetailViewController.xib; sourceTree = "<group>"; };
+		A447FD142C236035001AD246 /* ReachabilitySIL.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ReachabilitySIL.xcframework; path = ../../Carthage/Build/ReachabilitySIL.xcframework; sourceTree = "<group>"; };
 		C024C9931FA6EB470060583B /* NotificationName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationName.swift; sourceTree = "<group>"; };
 		C024C9951FA6EC650060583B /* NotificationCenter+Typed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationCenter+Typed.swift"; sourceTree = "<group>"; };
 		C024C9971FA6F2330060583B /* NotificationObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationObserver.swift; sourceTree = "<group>"; };
@@ -435,7 +436,6 @@
 		CE5C8BE424B5BD1C00FAFB7F /* QueryModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryModelTests.swift; sourceTree = "<group>"; };
 		CE5EDDBB26522EA3001733AC /* DeviceKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = DeviceKit.xcframework; path = ../../Carthage/Build/DeviceKit.xcframework; sourceTree = "<group>"; };
 		CE5EDDC226522EAA001733AC /* Sentry.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Sentry.xcframework; path = ../../Carthage/Build/Sentry.xcframework; sourceTree = "<group>"; };
-		CE5EDDC326522EAA001733AC /* Reachability.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Reachability.xcframework; path = ../../Carthage/Build/Reachability.xcframework; sourceTree = "<group>"; };
 		CE67D960228A6F190029F2B5 /* KeyboardCommandStructs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardCommandStructs.swift; sourceTree = "<group>"; };
 		CE71705723A9C14D00A924A1 /* ResourceFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceFileManager.swift; sourceTree = "<group>"; };
 		CE71705E23A9C97F00A924A1 /* PackageInstallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageInstallViewController.swift; sourceTree = "<group>"; };
@@ -559,7 +559,7 @@
 				296EF2C72AFA26C700E3E384 /* ZIPFoundation.xcframework in Frameworks */,
 				CE5EDDD52652372A001733AC /* DeviceKit.xcframework in Frameworks */,
 				CE5EDDC726522EAA001733AC /* Sentry.xcframework in Frameworks */,
-				CE5EDDC826522EAA001733AC /* Reachability.xcframework in Frameworks */,
+				A447FD152C236035001AD246 /* ReachabilitySIL.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -943,8 +943,8 @@
 		F243888114BBD43000A3E055 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A447FD142C236035001AD246 /* ReachabilitySIL.xcframework */,
 				296EF2C62AFA26C700E3E384 /* ZIPFoundation.xcframework */,
-				CE5EDDC326522EAA001733AC /* Reachability.xcframework */,
 				CE5EDDC226522EAA001733AC /* Sentry.xcframework */,
 				CE5EDDBB26522EA3001733AC /* DeviceKit.xcframework */,
 				9A079DE52231A69D00581263 /* Foundation.framework */,

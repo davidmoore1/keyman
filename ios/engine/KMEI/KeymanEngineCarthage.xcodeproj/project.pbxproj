@@ -52,8 +52,8 @@
 		9AD4F53D229F85AC007992D3 /* LanguageSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AD4F53B229F85AC007992D3 /* LanguageSettingsViewController.xib */; };
 		9ADC459D22E1895D004C78C6 /* LanguageLMDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADC459B22E1895D004C78C6 /* LanguageLMDetailViewController.swift */; };
 		9ADC459F22E1895D004C78C6 /* LanguageLMDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ADC459C22E1895D004C78C6 /* LanguageLMDetailViewController.xib */; };
+		A447FD112C235CF4001AD246 /* ReachabilitySIL.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A447FD102C235CF4001AD246 /* ReachabilitySIL.xcframework */; };
 		A45B257F2C1CCC3900CE054A /* DeviceKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A45B257E2C1CCC3900CE054A /* DeviceKit.xcframework */; };
-		A45B25832C1CCC6200CE054A /* Reachability.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A45B25822C1CCC6200CE054A /* Reachability.xcframework */; };
 		A45B25872C1CCC8600CE054A /* Sentry.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A45B25862C1CCC8600CE054A /* Sentry.xcframework */; };
 		A45B258A2C1CCCBF00CE054A /* ZIPFoundation.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A45B25892C1CCCBF00CE054A /* ZIPFoundation.xcframework */; };
 		C024C9941FA6EB470060583B /* NotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = C024C9931FA6EB470060583B /* NotificationName.swift */; };
@@ -369,8 +369,8 @@
 		9AD4F53B229F85AC007992D3 /* LanguageSettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = LanguageSettingsViewController.xib; path = Settings/LanguageSettingsViewController.xib; sourceTree = "<group>"; };
 		9ADC459B22E1895D004C78C6 /* LanguageLMDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageLMDetailViewController.swift; sourceTree = "<group>"; };
 		9ADC459C22E1895D004C78C6 /* LanguageLMDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LanguageLMDetailViewController.xib; sourceTree = "<group>"; };
+		A447FD102C235CF4001AD246 /* ReachabilitySIL.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ReachabilitySIL.xcframework; path = ../../../Carthage/Build/ReachabilitySIL.xcframework; sourceTree = "<group>"; };
 		A45B257E2C1CCC3900CE054A /* DeviceKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = DeviceKit.xcframework; path = ../../../Carthage/Build/DeviceKit.xcframework; sourceTree = "<group>"; };
-		A45B25822C1CCC6200CE054A /* Reachability.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Reachability.xcframework; path = ../../../Carthage/Build/Reachability.xcframework; sourceTree = "<group>"; };
 		A45B25862C1CCC8600CE054A /* Sentry.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Sentry.xcframework; path = ../../../Carthage/Build/Sentry.xcframework; sourceTree = "<group>"; };
 		A45B25892C1CCCBF00CE054A /* ZIPFoundation.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ZIPFoundation.xcframework; path = ../../../Carthage/Build/ZIPFoundation.xcframework; sourceTree = "<group>"; };
 		C024C9931FA6EB470060583B /* NotificationName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationName.swift; sourceTree = "<group>"; };
@@ -556,10 +556,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A45B25832C1CCC6200CE054A /* Reachability.xcframework in Frameworks */,
 				A45B257F2C1CCC3900CE054A /* DeviceKit.xcframework in Frameworks */,
 				A45B258A2C1CCCBF00CE054A /* ZIPFoundation.xcframework in Frameworks */,
 				A45B25872C1CCC8600CE054A /* Sentry.xcframework in Frameworks */,
+				A447FD112C235CF4001AD246 /* ReachabilitySIL.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -943,9 +943,9 @@
 		F243888114BBD43000A3E055 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A447FD102C235CF4001AD246 /* ReachabilitySIL.xcframework */,
 				A45B25892C1CCCBF00CE054A /* ZIPFoundation.xcframework */,
 				A45B25862C1CCC8600CE054A /* Sentry.xcframework */,
-				A45B25822C1CCC6200CE054A /* Reachability.xcframework */,
 				A45B257E2C1CCC3900CE054A /* DeviceKit.xcframework */,
 				9A079DE52231A69D00581263 /* Foundation.framework */,
 			);

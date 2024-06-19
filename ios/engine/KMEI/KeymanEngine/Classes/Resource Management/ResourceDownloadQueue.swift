@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import Reachability
+import ReachabilitySIL
 import os.log
 
 enum DownloadNode {
@@ -265,7 +265,7 @@ class ResourceDownloadQueue: HTTPDownloadDelegate {
 
   private var queueThread: DispatchQueue
   private var downloader: HTTPDownloader?
-  private var reachability: Reachability?
+  private var reachability: ReachabilitySIL?
 
   private let session: URLSession
 
@@ -278,7 +278,7 @@ class ResourceDownloadQueue: HTTPDownloadDelegate {
 
   internal init(session: URLSession, autoExecute: Bool) {
     do {
-      try reachability = Reachability(hostname: KeymanHosts.API_KEYMAN_COM.host!)
+      try reachability = ReachabilitySIL(hostname: KeymanHosts.API_KEYMAN_COM.host!)
     } catch {
       let message = "Could not start Reachability object: \(error)"
       os_log("%{public}s", log:KeymanEngineLogger.resources, type: .error, message)
@@ -297,7 +297,7 @@ class ResourceDownloadQueue: HTTPDownloadDelegate {
   }
   
   public func hasConnection() -> Bool {
-    return reachability?.connection != Reachability.Connection.unavailable
+    return reachability?.connection != ReachabilitySIL.Connection.unavailable
   }
 
   public var state: QueueState {
