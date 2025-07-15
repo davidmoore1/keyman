@@ -9,7 +9,7 @@
 import UIKit
 import WebKit
 import DeviceKit
-import Reachability
+import ReachabilitySIL
 import os.log
 
 typealias FetchKeyboardsBlock = ([String: Any]?) -> Void
@@ -170,7 +170,7 @@ public class Manager: NSObject, UIGestureRecognizerDelegate {
   }
 
   //private var downloadQueue: HTTPDownloader?
-  private var reachability: Reachability!
+  private var reachability: ReachabilitySIL!
   var didSynchronize = false
   
   private var _spacebarText: SpacebarText
@@ -222,7 +222,7 @@ public class Manager: NSObject, UIGestureRecognizerDelegate {
       updateUserKeyboards(with: Defaults.keyboard)
       
       do {
-        try reachability = Reachability(hostname: KeymanHosts.API_KEYMAN_COM.host!)
+        try reachability = ReachabilitySIL(hostname: KeymanHosts.API_KEYMAN_COM.host!)
       } catch {
         let message = ("Could not start Reachability object: \(error)")
         os_log("%{public}s", log:KeymanEngineLogger.settings, type: .error, message)
@@ -748,9 +748,9 @@ public class Manager: NSObject, UIGestureRecognizerDelegate {
     let message = { [self] in
       let reachStr: String
       switch reachability.connection {
-      case Reachability.Connection.wifi:
+      case ReachabilitySIL.Connection.wifi:
         reachStr = "Reachable Via WiFi"
-      case Reachability.Connection.cellular:
+      case ReachabilitySIL.Connection.cellular:
         reachStr = "Reachable Via WWan"
       default:
         reachStr = "Not Reachable"

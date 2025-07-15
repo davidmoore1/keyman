@@ -8,14 +8,14 @@
 
 import KeymanEngine
 import WebKit
-import Reachability
+import ReachabilitySIL
 import os
 
 // TODO: Refactor common functionality from InfoViewController
 class SetUpViewController: UIViewController, WKNavigationDelegate {
   @IBOutlet var webView: WKWebView!
 
-  private var networkReachable: Reachability?
+  private var networkReachable: ReachabilitySIL?
 
   convenience init() {
     self.init(nibName: "SetUpViewController", bundle: nil)
@@ -33,7 +33,7 @@ class SetUpViewController: UIViewController, WKNavigationDelegate {
         name: NSNotification.Name.reachabilityChanged, object: nil)
 
     do {
-      try networkReachable = Reachability(hostname: "keyman.com")
+      try networkReachable = ReachabilitySIL(hostname: "keyman.com")
       try networkReachable?.startNotifier()
     } catch {
       let message = "error thrown starting Reachability notifier:  \(error)"
@@ -49,7 +49,7 @@ class SetUpViewController: UIViewController, WKNavigationDelegate {
   func reloadKeymanHelp() {
     if let networkStatus = networkReachable?.connection {
       switch networkStatus {
-      case Reachability.Connection.none, Reachability.Connection.unavailable:
+      case ReachabilitySIL.Connection.none, ReachabilitySIL.Connection.unavailable:
         loadFromLocal()
       default:
         loadFromServer()
