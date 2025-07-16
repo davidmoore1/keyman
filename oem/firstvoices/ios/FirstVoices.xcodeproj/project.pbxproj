@@ -50,17 +50,17 @@
 		98C9A8F01BFBF6C1009E9A4F /* banner-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 98C9A8E51BFBF6C1009E9A4F /* banner-Portrait@2x~ipad.png */; };
 		98C9A8F11BFBF6C1009E9A4F /* banner-Portrait@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98C9A8E61BFBF6C1009E9A4F /* banner-Portrait@3x.png */; };
 		98C9A8F21BFBF6C1009E9A4F /* banner-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 98C9A8E71BFBF6C1009E9A4F /* banner-Portrait~ipad.png */; };
+		A4B557082E280583004C3EAE /* ReachabilitySIL.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4B557072E280583004C3EAE /* ReachabilitySIL.xcframework */; };
+		A4B557092E280583004C3EAE /* ReachabilitySIL.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A4B557072E280583004C3EAE /* ReachabilitySIL.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A4B5570A2E280599004C3EAE /* ReachabilitySIL.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4B557072E280583004C3EAE /* ReachabilitySIL.xcframework */; };
 		CEBD34022654D41200EB2EA8 /* KeymanEngine.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEBD34012654D41200EB2EA8 /* KeymanEngine.xcframework */; };
 		CEBD34032654D41200EB2EA8 /* KeymanEngine.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CEBD34012654D41200EB2EA8 /* KeymanEngine.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CEBD341A2654D76600EB2EA8 /* DeviceKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEBD34052654D4EB00EB2EA8 /* DeviceKit.xcframework */; };
 		CEBD341B2654D76600EB2EA8 /* DeviceKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CEBD34052654D4EB00EB2EA8 /* DeviceKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CEBD341F2654D76900EB2EA8 /* Reachability.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEBD340C2654D5AB00EB2EA8 /* Reachability.xcframework */; };
-		CEBD34202654D76900EB2EA8 /* Reachability.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CEBD340C2654D5AB00EB2EA8 /* Reachability.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CEBD34222654D76B00EB2EA8 /* Sentry.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEBD34092654D5AA00EB2EA8 /* Sentry.xcframework */; };
 		CEBD34232654D76B00EB2EA8 /* Sentry.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CEBD34092654D5AA00EB2EA8 /* Sentry.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CEBD34472654FF3300EB2EA8 /* KeymanEngine.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEBD34012654D41200EB2EA8 /* KeymanEngine.xcframework */; };
 		CEDB327F265C9C58000A2009 /* DeviceKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEBD34052654D4EB00EB2EA8 /* DeviceKit.xcframework */; };
-		CEDB3281265C9C58000A2009 /* Reachability.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEBD340C2654D5AB00EB2EA8 /* Reachability.xcframework */; };
 		CEDB3282265C9C58000A2009 /* Sentry.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEBD34092654D5AA00EB2EA8 /* Sentry.xcframework */; };
 /* End PBXBuildFile section */
 
@@ -71,8 +71,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				CEBD34202654D76900EB2EA8 /* Reachability.xcframework in Embed Frameworks */,
 				290FB4642AFB358F00249D58 /* ZIPFoundation.xcframework in Embed Frameworks */,
+				A4B557092E280583004C3EAE /* ReachabilitySIL.xcframework in Embed Frameworks */,
 				CEBD341B2654D76600EB2EA8 /* DeviceKit.xcframework in Embed Frameworks */,
 				CEBD34232654D76B00EB2EA8 /* Sentry.xcframework in Embed Frameworks */,
 				CEBD34032654D41200EB2EA8 /* KeymanEngine.xcframework in Embed Frameworks */,
@@ -138,10 +138,10 @@
 		98C9A8E71BFBF6C1009E9A4F /* banner-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "banner-Portrait~ipad.png"; sourceTree = "<group>"; };
 		98C9A9F91BFC10D2009E9A4F /* FirstVoices.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = FirstVoices.entitlements; sourceTree = "<group>"; };
 		98C9A9FA1BFC1111009E9A4F /* SWKeyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SWKeyboard.entitlements; sourceTree = "<group>"; };
+		A4B557072E280583004C3EAE /* ReachabilitySIL.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ReachabilitySIL.xcframework; path = Carthage/Build/ReachabilitySIL.xcframework; sourceTree = "<group>"; };
 		CEBD34012654D41200EB2EA8 /* KeymanEngine.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = KeymanEngine.xcframework; sourceTree = "<group>"; };
 		CEBD34052654D4EB00EB2EA8 /* DeviceKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = DeviceKit.xcframework; path = Carthage/Build/DeviceKit.xcframework; sourceTree = "<group>"; };
 		CEBD34092654D5AA00EB2EA8 /* Sentry.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Sentry.xcframework; path = Carthage/Build/Sentry.xcframework; sourceTree = "<group>"; };
-		CEBD340C2654D5AB00EB2EA8 /* Reachability.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Reachability.xcframework; path = Carthage/Build/Reachability.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,8 +149,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEBD341F2654D76900EB2EA8 /* Reachability.xcframework in Frameworks */,
 				290FB4632AFB358F00249D58 /* ZIPFoundation.xcframework in Frameworks */,
+				A4B557082E280583004C3EAE /* ReachabilitySIL.xcframework in Frameworks */,
 				CEBD34222654D76B00EB2EA8 /* Sentry.xcframework in Frameworks */,
 				CEBD341A2654D76600EB2EA8 /* DeviceKit.xcframework in Frameworks */,
 				CEBD34022654D41200EB2EA8 /* KeymanEngine.xcframework in Frameworks */,
@@ -162,8 +162,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEDB327F265C9C58000A2009 /* DeviceKit.xcframework in Frameworks */,
+				A4B5570A2E280599004C3EAE /* ReachabilitySIL.xcframework in Frameworks */,
 				290FB4652AFB359A00249D58 /* ZIPFoundation.xcframework in Frameworks */,
-				CEDB3281265C9C58000A2009 /* Reachability.xcframework in Frameworks */,
 				CEDB3282265C9C58000A2009 /* Sentry.xcframework in Frameworks */,
 				CEBD34472654FF3300EB2EA8 /* KeymanEngine.xcframework in Frameworks */,
 			);
@@ -281,8 +281,8 @@
 		98C9A9FB1BFC19ED009E9A4F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A4B557072E280583004C3EAE /* ReachabilitySIL.xcframework */,
 				290FB4622AFB358E00249D58 /* ZIPFoundation.xcframework */,
-				CEBD340C2654D5AB00EB2EA8 /* Reachability.xcframework */,
 				CEBD34092654D5AA00EB2EA8 /* Sentry.xcframework */,
 				CEBD34052654D4EB00EB2EA8 /* DeviceKit.xcframework */,
 				CEBD34012654D41200EB2EA8 /* KeymanEngine.xcframework */,

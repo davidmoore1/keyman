@@ -8,7 +8,7 @@
 
 import KeymanEngine
 import WebKit
-import Reachability
+import ReachabilitySIL
 import os
 
 class InfoViewController: UIViewController, WKNavigationDelegate {
@@ -17,7 +17,7 @@ class InfoViewController: UIViewController, WKNavigationDelegate {
   @IBOutlet var backButton: UIBarButtonItem!
   @IBOutlet var forwardButton: UIBarButtonItem!
 
-  private var networkReachable: Reachability?
+  private var networkReachable: ReachabilitySIL?
 
   private var exitClosure: (() -> Void)?
 
@@ -39,7 +39,7 @@ class InfoViewController: UIViewController, WKNavigationDelegate {
         name: NSNotification.Name.reachabilityChanged, object: nil)
 
     do {
-      try networkReachable = Reachability(hostname: "keyman.com")
+      try networkReachable = ReachabilitySIL(hostname: "keyman.com")
       try networkReachable?.startNotifier()
     } catch {
       let message = "error starting Reachability notifier: \(error)"

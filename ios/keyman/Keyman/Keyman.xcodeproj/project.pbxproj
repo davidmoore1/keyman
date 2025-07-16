@@ -115,6 +115,8 @@
 		985EA9E819E64A580006C017 /* banner-Portrait@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 985EA9DD19E64A580006C017 /* banner-Portrait@3x.png */; };
 		985EA9E919E64A580006C017 /* banner-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 985EA9DE19E64A580006C017 /* banner-Portrait~ipad.png */; };
 		989E4DBC1B1EB85200A345FB /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 989E4DBA1B1EB85200A345FB /* Settings.bundle */; };
+		A4B557052E2803C4004C3EAE /* ReachabilitySIL.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4B557042E2803C4004C3EAE /* ReachabilitySIL.xcframework */; };
+		A4B557062E2803C4004C3EAE /* ReachabilitySIL.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A4B557042E2803C4004C3EAE /* ReachabilitySIL.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C055F0B11F60E8D400140735 /* GetStartedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C055F0B01F60E8D400140735 /* GetStartedViewController.swift */; };
 		C055F0B31F60F7A400140735 /* DropDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C055F0B21F60F7A400140735 /* DropDownView.swift */; };
 		C055F0B51F610FB200140735 /* DropDownListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C055F0B41F610FB200140735 /* DropDownListView.swift */; };
@@ -150,8 +152,6 @@
 		CEBD34322654FE3500EB2EA8 /* KeymanEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE80AD32257F2B4A008D2150 /* KeymanEngine.framework */; };
 		CEBD343B2654FEB400EB2EA8 /* DeviceKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEBD34352654FEB400EB2EA8 /* DeviceKit.xcframework */; };
 		CEBD343C2654FEB400EB2EA8 /* DeviceKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CEBD34352654FEB400EB2EA8 /* DeviceKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CEBD343F2654FEB400EB2EA8 /* Reachability.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEBD34372654FEB400EB2EA8 /* Reachability.xcframework */; };
-		CEBD34402654FEB400EB2EA8 /* Reachability.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CEBD34372654FEB400EB2EA8 /* Reachability.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CEBD34412654FEB400EB2EA8 /* Sentry.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEBD34382654FEB400EB2EA8 /* Sentry.xcframework */; };
 		CEBD34422654FEB400EB2EA8 /* Sentry.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CEBD34382654FEB400EB2EA8 /* Sentry.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CEF4E55623E95B7B0065B9C7 /* ImageBanner.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF4E55523E95B7B0065B9C7 /* ImageBanner.xib */; };
@@ -178,8 +178,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				CEBD34402654FEB400EB2EA8 /* Reachability.xcframework in Embed Frameworks */,
 				296EF2C52AFA267500E3E384 /* ZIPFoundation.xcframework in Embed Frameworks */,
+				A4B557062E2803C4004C3EAE /* ReachabilitySIL.xcframework in Embed Frameworks */,
 				CEBD343C2654FEB400EB2EA8 /* DeviceKit.xcframework in Embed Frameworks */,
 				CEBD34422654FEB400EB2EA8 /* Sentry.xcframework in Embed Frameworks */,
 				CE80AD34257F2B4B008D2150 /* KeymanEngine.framework in Embed Frameworks */,
@@ -312,6 +312,7 @@
 		98D55ED718480B6800104956 /* textsize_down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "textsize_down@2x.png"; path = "Keyman Icons/textsize_down@2x.png"; sourceTree = "<group>"; };
 		98D55EDC18480B6800104956 /* textsize_up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = textsize_up.png; path = "Keyman Icons/textsize_up.png"; sourceTree = "<group>"; };
 		98D55EDD18480B6800104956 /* textsize_up@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "textsize_up@2x.png"; path = "Keyman Icons/textsize_up@2x.png"; sourceTree = "<group>"; };
+		A4B557042E2803C4004C3EAE /* ReachabilitySIL.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ReachabilitySIL.xcframework; path = "/Users/davidyahoo/Source/Github/keyman-dm/keyman/ios/engine/KMEI/../../Carthage/Build/ReachabilitySIL.xcframework"; sourceTree = "<absolute>"; };
 		C055F0B01F60E8D400140735 /* GetStartedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = GetStartedViewController.swift; sourceTree = "<group>"; tabWidth = 2; };
 		C055F0B21F60F7A400140735 /* DropDownView.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = DropDownView.swift; sourceTree = "<group>"; tabWidth = 2; };
 		C055F0B41F610FB200140735 /* DropDownListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = DropDownListView.swift; sourceTree = "<group>"; tabWidth = 2; };
@@ -337,7 +338,6 @@
 		CEACC90F25F07D5A006EAB45 /* km */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = km; path = km.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CEACC91225F07D77006EAB45 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CEBD34352654FEB400EB2EA8 /* DeviceKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = DeviceKit.xcframework; path = ../../Carthage/Build/DeviceKit.xcframework; sourceTree = "<absolute>"; };
-		CEBD34372654FEB400EB2EA8 /* Reachability.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Reachability.xcframework; path = ../../Carthage/Build/Reachability.xcframework; sourceTree = "<absolute>"; };
 		CEBD34382654FEB400EB2EA8 /* Sentry.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Sentry.xcframework; path = ../../Carthage/Build/Sentry.xcframework; sourceTree = "<absolute>"; };
 		CEBD3458265511B700EB2EA8 /* am */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = am; path = am.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CEEC468226F2F7BA009A5B7D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
@@ -352,8 +352,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEBD343F2654FEB400EB2EA8 /* Reachability.xcframework in Frameworks */,
 				296EF2C42AFA267500E3E384 /* ZIPFoundation.xcframework in Frameworks */,
+				A4B557052E2803C4004C3EAE /* ReachabilitySIL.xcframework in Frameworks */,
 				CEBD343B2654FEB400EB2EA8 /* DeviceKit.xcframework in Frameworks */,
 				CEBD34412654FEB400EB2EA8 /* Sentry.xcframework in Frameworks */,
 				CE80AD33257F2B4A008D2150 /* KeymanEngine.framework in Frameworks */,
@@ -537,9 +537,9 @@
 		98ABADB2176935E400B62590 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A4B557042E2803C4004C3EAE /* ReachabilitySIL.xcframework */,
 				296EF2C32AFA267500E3E384 /* ZIPFoundation.xcframework */,
 				CEBD34352654FEB400EB2EA8 /* DeviceKit.xcframework */,
-				CEBD34372654FEB400EB2EA8 /* Reachability.xcframework */,
 				CEBD34382654FEB400EB2EA8 /* Sentry.xcframework */,
 				CE80AD32257F2B4A008D2150 /* KeymanEngine.framework */,
 			);

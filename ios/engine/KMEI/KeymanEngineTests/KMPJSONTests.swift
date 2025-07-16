@@ -7,7 +7,7 @@
 //
 
 import XCTest
-import Reachability
+import ReachabilitySIL
 
 @testable import KeymanEngine
 
@@ -227,7 +227,7 @@ class KMPJSONTests: XCTestCase {
 
     // So, first let's make sure that the API endpoint actually IS available.
     // If not, skip this test.
-    let reachable = try Reachability(hostname: "https://assertible.com/json")
+    let reachable = try ReachabilitySIL(hostname: "https://assertible.com/json")
     try XCTSkipIf(reachable.connection == .unavailable, "API endpoint for test not available")
 
     // - build the arguments for the API call
