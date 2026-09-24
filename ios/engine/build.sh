@@ -79,6 +79,16 @@ function do_carthage() {
 
   # --no-use-binaries: due to https://github.com/Carthage/Carthage/issues/3134,
   # which affects the sentry-cocoa dependency.
+  sed -i '' 's/IPHONEOS_DEPLOYMENT_TARGET = 11.0;/IPHONEOS_DEPLOYMENT_TARGET = 15.0;/g' \
+    Carthage/Checkouts/DeviceKit/DeviceKit.xcodeproj/project.pbxproj
+  sed -i '' 's/IPHONEOS_DEPLOYMENT_TARGET = 12.0;/IPHONEOS_DEPLOYMENT_TARGET = 15.0;/g' \
+    Carthage/Checkouts/Reachability.swift/ReachabilitySIL.xcodeproj/project.pbxproj  
+  sed -i '' 's/IPHONEOS_DEPLOYMENT_TARGET_V = 11.0/IPHONEOS_DEPLOYMENT_TARGET_V = 15.0/g' \
+    Carthage/Checkouts/sentry-cocoa/Sources/Configuration/DeploymentTargets.xcconfig
+  sed -i '' 's/IPHONEOS_DEPLOYMENT_TARGET = 13.0/IPHONEOS_DEPLOYMENT_TARGET = 15.0/g' \
+    Carthage/Checkouts/sentry-cocoa/Sources/Configuration/SentrySwiftUI.xcconfig
+  sed -i '' 's/IPHONEOS_DEPLOYMENT_TARGET = 12.0;/IPHONEOS_DEPLOYMENT_TARGET = 15.0;/g' \
+    Carthage/Checkouts/ZIPFoundation/ZIPFoundation.xcodeproj/project.pbxproj 
   carthage build --use-xcframeworks --no-use-binaries --platform iOS || carthage_die "Carthage dependency loading failed"
 
   popd > /dev/null
